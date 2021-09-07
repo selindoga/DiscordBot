@@ -19,9 +19,9 @@ public class Main extends ListenerAdapter {
                 + event.getAuthor().getName() + ": "
                 + event.getMessage().getContentDisplay());
 
-        if(event.getMessage().getContentRaw().equals("naber"))
+        if(event.getMessage().getContentRaw().contains("naber"))
         {
-            event.getChannel().sendMessage("iyi ya nolsun iste bot yapiyoz senden naber :D").queue();
+            event.getChannel().sendMessage("merabalar, bende bot (ayakkabi degilim) :D").queue();
         }
         if(event.getMessage().getContentRaw().equals("aferim bana"))
         {
@@ -38,10 +38,6 @@ public class Main extends ListenerAdapter {
         if(event.getMessage().getContentRaw().equals("BOT BANA CEVAP VERR"))
         {
             event.getChannel().sendMessage("tamam abi hemen abi").queue();
-        }
-        if ((event.getMessage().getContentRaw().contains("naber") || event.getMessage().getContentRaw().contains("meraba")) || event.getMessage().getContentRaw().contains("merhaba"))
-        {
-            event.getChannel().sendMessage("Selamm, meraba bende bot ;) ayakkabı olan değil hahahahaaa").queue();
         }
     }
 }
