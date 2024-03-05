@@ -9,7 +9,7 @@ import static net.dv8tion.jda.api.AccountType.*;
 
 public class Main extends ListenerAdapter {
     public static void main(String[] args) throws LoginException {
-        JDABuilder builder = JDABuilder.createDefault(" ");
+        JDABuilder builder = JDABuilder.createDefault("   "); 
         builder.addEventListeners(new Main());
         builder.build();
     }
