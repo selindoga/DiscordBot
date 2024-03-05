@@ -9,7 +9,7 @@ import static net.dv8tion.jda.api.AccountType.*;
 
 public class Main extends ListenerAdapter {
     public static void main(String[] args) throws LoginException {
-        JDABuilder builder = JDABuilder.createDefault("ODg0MDQxMDU4MjkwMzk3MTk0.YTStZA.aaRvWOZCGGnTEP3Ay_gXX1Lmzg0");
+        JDABuilder builder = JDABuilder.createDefault(" ");
         builder.addEventListeners(new Main());
         builder.build();
     }
@@ -34,10 +34,6 @@ public class Main extends ListenerAdapter {
         if(event.getMessage().getContentRaw().equals("hehehe"))
         {
             event.getChannel().sendMessage("NIHUHAHAHAAHAAAAA!!!! :D :D").queue();
-        }
-        if(event.getMessage().getContentRaw().equals("BOT BANA CEVAP VERR"))
-        {
-            event.getChannel().sendMessage("tamam abi hemen abi").queue();
         }
     }
 }
